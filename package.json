@@ -1,0 +1,15 @@
+{
+  "name": "hubot-woo",
+  "version": "1.0.0",
+  "description": "hubot script for displaying random image from an S3 bucket",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "hubot",
+    "lolz"
+  ],
+  "author": "Mike Atkins",
+  "license": "ISC"
+}

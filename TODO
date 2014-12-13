@@ -1,0 +1,16 @@
+push to github
+npm install --save aws-sdk random.js sprintf
+npm install --save-dev tape
+
+write the tests
+write CONTRIBUTING.MD
+  * Ensure jshint passes
+  * Ensure the tests pass
+  * Ensure the code you've added is covered by tests
+  * Rev the version as appropraite in the package.json
+
+ask Troy if he wants this in Lanetix
+set up travis
+add travis badge
+publish to npm
+add npm badge
