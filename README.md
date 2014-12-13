@@ -32,3 +32,7 @@ Testing
 gem install fake_s3
 npm test
 ```
+
+Thanks
+-------
+Thanks to @benjymessner for the inital implementation.
