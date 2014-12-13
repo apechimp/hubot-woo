@@ -11,5 +11,13 @@
     "lolz"
   ],
   "author": "Mike Atkins",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1.1",
+    "random.js": "^0.1.0",
+    "sprintf": "^0.1.5"
+  },
+  "devDependencies": {
+    "tape": "^3.0.3"
+  }
 }

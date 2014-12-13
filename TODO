@@ -1,7 +1,3 @@
-push to github
-npm install --save aws-sdk random.js sprintf
-npm install --save-dev tape
-
 write the tests
 write CONTRIBUTING.MD
   * Ensure jshint passes
