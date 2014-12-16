@@ -14,7 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.1.1",
-    "random.js": "^0.1.0",
+    "random-js": "^1.0.4",
     "sprintf": "^0.1.5"
   },
   "devDependencies": {
