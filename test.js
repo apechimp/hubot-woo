@@ -1,9 +1,9 @@
 process.env.AWS_ENDPOINT = 'http://localhost:2345';
 var bucket = process.env.WOO_BUCKET = 'foo';
-process.env.AWS_ACCESS_KEY_ID = 'bar';
-process.env.AWS_SECRET_ACCESS_KEY = 'baz';
+process.env.AWS_ACCESS_KEY_ID = 'xxx';
+process.env.AWS_SECRET_ACCESS_KEY = 'xxx';
 process.env.AWS_FORCE_PATH_STYLE = true;
-process.env.AWS_SSL_DIABLED = true;
+process.env.AWS_SSL_DISABLED = true;
 
 var test = require('tape');
 var hubot_woo = require('./index');
