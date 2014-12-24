@@ -10,7 +10,6 @@
 //   AWS_ACCESS_KEY_ID
 //   AWS_ACCESS_SECRET
 //   WOO_BUCKET
-//   WOO_COMMAND (defaults to woo)
 //
 // Commands:
 //   hubot woo - Returns a randomly selected url to something in an s3 bucket.
