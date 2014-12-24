@@ -29,3 +29,6 @@ node_modules
 
 # vim swap files
 *.sw[a-z]
+
+# fake s3 files
+tmp
