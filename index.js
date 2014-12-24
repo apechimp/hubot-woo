@@ -18,21 +18,12 @@
 // Author:
 //   apechimp
 
-var aws = require('aws-sdk');
 var Random = require('random-js');
 var sprintf = require('sprintf');
+var s3 = require('./s3');
 
 var mt = Random.engines.mt19937();
 mt.seed(Date.now());
-
-aws.config.update({
-  endpoint: process.env.AWS_ENDPOINT,
-  accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-  sslEnabled: !process.env.AWS_SSL_DISABLED,
-  region: 'us-east-1'
-});
-s3 = new aws.S3();
 
 var command_regex = /^woo\b/i;
 var bucket = process.env.WOO_BUCKET;
@@ -45,6 +36,9 @@ module.exports = function (robot) {
         if(err) {
           console.error(err);
           msg.send('the gods of woo are displeased.');
+        }
+        else if(!data.Contents.length) {
+          msg.send('no woo pics :\'(');
         }
         else {
           msg.send(
