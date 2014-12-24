@@ -21,7 +21,7 @@ test('Command is woo', function(t) {
 
 test('Call send with message for empty bucket', function(t) {
   var s3 = require('./s3');
-  t.plan(2);
+  t.plan(3);
   s3.createBucket({ Bucket: bucket }, function(err) {
     t.error(err);
     hubot_woo({
@@ -29,6 +29,9 @@ test('Call send with message for empty bucket', function(t) {
         responder({
           send: function(message) {
             t.equal(message, 'no woo pics :\'(');
+            s3.deleteBucket({ Bucket: bucket }, function(err) {
+              t.error(err);
+            });
           }
         });
       }
@@ -38,7 +41,7 @@ test('Call send with message for empty bucket', function(t) {
 
 test('Call send with url for something in the bucket', function(t) {
   var s3 = require('./s3');
-  t.plan(3);
+  t.plan(5);
   s3.createBucket({ Bucket: bucket }, function(err) {
     t.error(err);
     s3.putObject({ Bucket: bucket, Key: 'lol' }, function(err) {
@@ -48,6 +51,12 @@ test('Call send with url for something in the bucket', function(t) {
           responder({
             send: function(message) {
               t.equal(message, 'https://s3.amazonaws.com/foo/lol');
+              s3.deleteObject({ Bucket: bucket, Key: 'lol' }, function(err) {
+                t.error(err);
+                s3.deleteBucket({ Bucket: bucket }, function(err) {
+                  t.error(err);
+                });
+              });
             }
           });
         }
