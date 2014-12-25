@@ -4,9 +4,8 @@
   "description": "hubot script for displaying random image from an S3 bucket",
   "main": "index.js",
   "scripts": {
-    "pretest": "fakes3 -r tmp -p 2345 & echo $! > fakes3.pid",
-    "test": "node test.js",
-    "posttest": "kill -n 2 `cat fakes3.pid` && rm fakes3.pid"
+    "pretest": "./scripts/pretest.sh",
+    "test": "node test.js"
   },
   "keywords": [
     "hubot",
