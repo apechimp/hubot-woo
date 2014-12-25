@@ -1,5 +1,8 @@
 hubot-woo
 =========
+[![Build Status](https://travis-ci.org/apechimp/hubot-woo.png?branch=master)]
+(https://travis-ci.org/apechimp/hubot-woo)
+
 A hubot script which returns a randomly selected url to something in an s3
 bucket.
 
