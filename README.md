@@ -28,7 +28,7 @@ Hubot woo
 Testing
 -------
 ```
-gem install fake_s3
+gem install fakes3
 npm test
 ```
 
