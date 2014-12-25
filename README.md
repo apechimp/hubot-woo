@@ -16,7 +16,6 @@ Set the following environment variables
   * `AWS_ACCESS_KEY_ID`
   * `AWS_ACCESS_SECRET`
   * `WOO_BUCKET` S3 bucket to use
-  * `WOO_COMMAND` command to use for woo (defaults to woo)
 
 Usage
 -----
