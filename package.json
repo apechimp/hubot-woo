@@ -2,6 +2,7 @@
   "name": "hubot-woo",
   "version": "1.0.0",
   "description": "hubot script for displaying random image from an S3 bucket",
+  "repository": "https://github.com/apechimp/hubot-woo",
   "main": "index.js",
   "scripts": {
     "pretest": "./scripts/pretest.sh",
