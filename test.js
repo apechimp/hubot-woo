@@ -26,7 +26,7 @@ test('Command is woo', function(t) {
   hubot_woo({
     respond: function(command_regex) {
       t.ok(command_regex.test('woo'), 'woo matches');
-      t.notOk(command_regex.test('pwoo'), 'pwoo doesn\'t match');
+      t.ok(command_regex.test('pwoo'), 'pwoo matches because respond');
       t.notOk(command_regex.test('woop'), 'woop doesn\'t match');
     }
   });

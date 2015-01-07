@@ -24,7 +24,7 @@ var s3 = require('./s3');
 var mt = Random.engines.mt19937();
 mt.seed(Date.now());
 
-var command_regex = /^woo\b/i;
+var command_regex = /woo\b/i;
 var bucket = process.env.WOO_BUCKET;
 
 module.exports = function (robot) {
