@@ -1,5 +1,7 @@
 hubot-woo
 =========
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/apechimp/hubot-woo.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/apechimp/hubot-woo.png?branch=master)]
 (https://travis-ci.org/apechimp/hubot-woo)
 
